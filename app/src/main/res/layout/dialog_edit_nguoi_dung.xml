@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tv_themNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SỬA NGƯỜI DÙNG"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_custom1" />
+
+    <EditText
+        android:id="@+id/edt_taikhoan_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_custom"
+        android:enabled="false"
+        android:hint="Tài khoản"/>
+
+
+    <EditText
+        android:id="@+id/edt_sdt_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:background="@drawable/btn_custom"
+        android:hint="Số điện thoại"/>
+
+    <EditText
+        android:id="@+id/edt_hoten_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Họ và tên"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_edit_nguoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@drawable/btn_custom1"
+            android:text="SỬA"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_custom2"
+            android:layout_margin="2dp"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

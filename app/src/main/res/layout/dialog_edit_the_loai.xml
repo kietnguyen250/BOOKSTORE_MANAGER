@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Dialog.AddLoaiDialog">
+
+
+    <TextView
+        android:id="@+id/tv_editTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SỬA THỂ LOẠI"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_custom1" />
+
+    <EditText
+        android:id="@+id/edt_maLoai_edit"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Mã thể loại"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/edt_tenLoai_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Tên thể loại"/>
+
+
+    <EditText
+        android:id="@+id/edt_moTa_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Mô tả"/>
+
+    <EditText
+        android:id="@+id/edt_viTri_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Vị trí"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_edit_loai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@drawable/btn_custom1"
+            android:text="Sửa"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_custom2"
+            android:layout_margin="2dp"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TopSachActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFAB40" >
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edt_tim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:hint="Nhập tháng..."
+            android:inputType="number"
+            android:layout_toLeftOf="@id/btn_tim"
+            android:background="@drawable/btn_custom"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btn_tim"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_custom1"
+            android:text="Search"
+            android:onClick="VIEW_SACH_TOP_10"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_topSach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_tb"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
